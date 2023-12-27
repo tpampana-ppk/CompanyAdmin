@@ -1,15 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import Admin_Form from "./Admin_Form";
 import { addAdmin } from "../apiCalls/apiCalls";
-
-export interface MyFormData {
-  firstname: string;
-  middlename: string;
-  lastname: string;
-  email: string;
-  password: string;
-  confirmPassword: string;
-}
+import { MyFormData } from "../types/types";
 
 const initialData = {
   firstname: "",

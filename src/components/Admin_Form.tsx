@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FormEvent } from "react";
 import { TextField, Button, Grid, Paper, Typography, Box } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { MyFormData } from "./Add_Admin";
+import { MyFormData } from "../types/types";
 
 interface MyFormProps {
   label: string;

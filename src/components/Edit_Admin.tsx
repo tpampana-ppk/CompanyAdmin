@@ -1,17 +1,8 @@
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import Admin_Form from "./Admin_Form";
 import { getAdminEditData, updateAdmin } from "../apiCalls/apiCalls";
+import { tableData } from "../types/types";
 
-export interface tableData {
-  _id: string;
-  username: string;
-  firstname: string;
-  middlename: string;
-  lastname: string;
-  email: string;
-  password: string;
-  confirmPassword: string;
-}
 
 const Edit_Admin = ({
   dataFromParent,

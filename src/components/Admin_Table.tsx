@@ -8,14 +8,8 @@ import {
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { getCompanies } from "../apiCalls/apiCalls";
+import { admindata } from "../types/types";
 
-interface admindata {
-  _id: string;
-  username: string;
-  email: string;
-  role: string;
-  createdAt: string;
-}
 const Admin_Table = ({
   onDataSelect,
   tocken,
